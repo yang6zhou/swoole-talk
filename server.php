@@ -6,7 +6,7 @@ class sws {
 	private $redis;
 	//报告所有错误
 	public function __construct(){ 
-		echo '初始化参数...';
+		echo '初始化参数中...';
 		$this->serv = new swoole_websocket_server("0.0.0.0", 9501); 
 		$this->redis = new Redis();
 		$this->redis->connect('127.0.0.1', 6379);
